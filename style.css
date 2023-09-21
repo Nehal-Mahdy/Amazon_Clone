@@ -1,0 +1,130 @@
+:root{
+    --orange:#FEBD69;
+    --lightGray:#37475A;
+    --black:#131A22;
+    --darkGray:#232f3e;
+    --cream:#f2f2f2;
+}
+
+/* body{
+    background-color: red; 
+  background-image: linear-gradient(to bottom right,var(--cream) ,var(--lightGray));
+} */
+.navText{
+    color: #f2f2f2;
+}
+.navText:hover{
+   border:solid 0.5px white;
+   color: #f2f2f2;
+      /* box-shadow: 0 5px 15px #afe0f5; */
+}
+
+.text {
+  position: relative;
+  right: 30px;
+
+}
+
+.down::before {
+  content: "Deliver to";
+  position: relative;
+  font-size: 9px;
+  font-weight: 100;
+  bottom: 16px;
+  left: 37px;
+}
+/* .downText{
+position: relative;
+right: 50px;
+} */
+.downText::before{
+  content: "Hello, sign in";
+  position: absolute;
+  font-size: 9px;
+  bottom: 25px;
+  /* left: 55px; */
+}
+.orderDown::before{
+    content: "Returns";
+  position: absolute;
+  font-size: 9px;
+  bottom: 35px;
+  /* left: 55px; */
+}
+.cartLink{
+    position: relative;
+    left: 10px;
+}
+.btnAll{
+    background-color: rgb(184, 182, 182);
+    color: #131A22;
+}
+/* .btnAll:hover{
+     border:solid 0.5px white; 
+     background-color:rgb(184, 182, 182) ; 
+} */
+.btnAll:focus{
+    border:solid 3px var(--orange) ;
+    /* background-color:rgb(184, 182, 182) ; */
+}
+.searchBtn:focus{
+    border:solid 5px var(--orange) ;
+
+}
+.navScroller{
+    background-color: #232f3e;
+}
+.cardLink{
+    text-decoration: none;
+    color: rgb(39, 93, 105);
+}
+.cardLink:hover{
+    color: red;
+    text-decoration: underline;
+}
+.dropdown-menu{
+    text-align: center;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+.ulList{
+    list-style: none;
+
+}
+.vertical-line{
+        display: inline-block;
+        border-left: 1px solid #ccc;
+        position: relative;
+        right: 130px;
+        /* margin: 0 10px; */
+        height: 200px;
+    }
+   
+    .list{
+        text-decoration: none;
+        color: var(--darkGray);
+        font-size: 15px;
+    }
+    .list:hover{
+        color: var(--orange);
+    }
+    .listHeader{
+        font-size: 15px;
+        color: #FEBD69;
+        font-weight: bold;
+    }
+    .footerList{
+        top:-20%;
+        color: #bcbcbc;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .footerList:hover{
+        text-decoration: underline;
+    }

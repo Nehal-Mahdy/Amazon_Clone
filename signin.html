@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="icon" type="image/x-icon" href="./Amazon-logo-meaning.jpg">
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+       <!-- bootstrap links -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js" integrity="sha512-ToL6UYWePxjhDQKNioSi4AyJ5KkRxY+F1+Fi7Jgh0Hp5Kk2/s8FD7zusJDdonfe5B00Qw+B8taXxF6CFLnqNCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+       <!-- bootstrap icons -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+
+       <!-- font Awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+       <style>
+        a{
+            text-decoration: none;
+        }
+        :root{
+    --orange:#FEBD69;
+    --lightGray:#37475A;
+    --black:#131A22;
+    --darkGray:#232f3e;
+    --cream:#f2f2f2;
+}
+       </style>
+
+
+</head>
+<body>  
+
+    
+    <div class="vh-100 d-flex justify-content-center align-items-center" >
+       
+        <div class="container " style="width: 800px;">
+              <div class="row justify-content-center mb-5">
+        <a  class="text-center" href="./index.html"><img class="w-25 amazonImg" src="./amazonwhite.png"  alt=""></a>  
+        </div>
+        <div class="row d-flex justify-content-center">
+          
+            <div class="col-12 col-md-8 col-lg-6">
+              <div class="card bg-white ">
+                <div class="card-body p-5">
+                  <form class="mb-3 md-4">
+                    <h2 class=" mb-2 text-uppercase ">Sign in</h2>
+                    <p class=" mb-4">Please enter your login and password!</p>
+                    <div class="mb-3 ">
+                      <form>
+                      <label for="email" class="form-label " >Email address</label>
+                      <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label ">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="*******">
+                      <span id="invalid" style="display: none">
+                        Invalid username or password, please try again
+                      </span>
+                    </div>
+                    <!-- <p class="small"><a class="text-primary" href="forget-password.html">Forgot password?</a></p> -->
+                    <div class="d-grid">
+                      <button class="btn btn-warning bg-opacity-75 fw-bold " style="color:var(--darkGray)" id="signIn" type="submit">Login</button>
+                    </div>
+
+                 <span class="text-secondary" style="font-size: smaller; letter-spacing: -0.4px">By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice.</a></span>
+                  </form>
+                  <div>
+                    <p class="mb-0  text-center">Don't have an account? <a href="signup.html" class="text-warning text-opacity-75 fw-bold">Sign
+                        Up</a></p>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<script type="module" src="./signin.js"></script>
+<!-- <script type="module" src="./index.js"></script> -->
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <link rel="icon" type="image/x-icon" href="./Amazon-logo-meaning.jpg" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- bootstrap links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+      integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"
+      integrity="sha512-ToL6UYWePxjhDQKNioSi4AyJ5KkRxY+F1+Fi7Jgh0Hp5Kk2/s8FD7zusJDdonfe5B00Qw+B8taXxF6CFLnqNCw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      a {
+        text-decoration: none;
+      }
+      :root {
+        --orange: #febd69;
+        --lightGray: #37475a;
+        --black: #131a22;
+        --darkGray: #232f3e;
+        --cream: #f2f2f2;
+      }
+
+      .form-label {
+        color: var(--darkGray);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+      <div class="container" style="width: 800px">
+        <div class="row justify-content-center mb-5 mt-2">
+          <a class="text-center" href="./index.html"
+            ><img class="w-25" src="./amazonwhite.png" alt=""
+          /></a>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="card bg-white">
+              <div class="card-body p-5">
+                <form class="mb-3 md-4">
+                  <h2 class="mb-3 text-center" style="letter-spacing: -0.4px">
+                    Create account
+                  </h2>
+                  <div class="mb-3" id="form">
+                    <label for="userName" class="form-label fw-bold mb-0"
+                      >Your Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="userName"
+                      placeholder="First and Last name"
+                    />
+                    <h5 id="usercheck" style="font-size: 12px; color: red">
+                      Full Name is invalid
+                    </h5>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label fw-bold mb-0"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="name@example.com"
+                    />
+                    <h5 id="emailinvalid" style="font-size: 12px; color: red">
+                      Invalid Email
+                    </h5>
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label fw-bold mb-0"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="at least 8 charcters"
+                    />
+                    <h5 id="passcheck" style="font-size: 12px; color: red">
+                      Minimum eight characters, at least one letter and one
+                      number
+                    </h5>
+                  </div>
+                  <div class="mb-3">
+                    <label for="conpassword" class="form-label fw-bold mb-0"
+                      >Re-enter password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="conpassword"
+                    />
+                    <h5 id="conpasscheck" style="font-size: 12px; color: red">
+                      Password didn't match
+                    </h5>
+                  </div>
+                  <!-- <p class="small"><a class="text-primary" href="forget-password.html">Forgot password?</a></p> -->
+                  <div class="d-grid">
+                    <button
+                      class="btn btn-warning bg-opacity-75 fw-bold"
+                      id="signUp"
+                      style="color: var(--darkGray)"
+                      type="submit"
+                    >
+                      Create
+                    </button>
+                  </div>
+
+                  <span
+                    class="text-secondary"
+                    style="font-size: smaller; letter-spacing: -0.4px"
+                    >By continuing, you agree to Amazon's
+                    <a href="#">Conditions of Use</a> and
+                    <a href="#">Privacy Notice.</a></span
+                  >
+                </form>
+                <div>
+                  <p class="mb-0 text-center">
+                    Already have an account?
+                    <a
+                      href="./signin.html"
+                      class="text-warning text-opacity-75 fw-bold"
+                      >Sign In</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./signup.js"></script>
+  </body>
+</html>
