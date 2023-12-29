@@ -158,7 +158,7 @@
           <p> <a class="list" href="#">Kindle E-readers & books</a></p>
          
           <div class="row">
-          <button class="btn " id="logOut"  style="color: #f2f2f2; background-color: #232f3e;"  >Log out</button>
+          <button class="btn " id="logOut" onclick="logOut()"   style="color: #f2f2f2; background-color: #232f3e;"  >Log out</button>
 
           </div>
 
@@ -438,5 +438,11 @@
         </footer>
       </div>
     <script type="module" src="./index.js"></script>
+    <script>
+      function logOut(){
+  localStorage.clear();
+  location.reload();
+}
+    </script>
 </body>
 </html>
